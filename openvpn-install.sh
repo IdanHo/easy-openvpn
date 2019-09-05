@@ -216,7 +216,7 @@ else
 		yum install openvpn iptables openssl ca-certificates -y
 	fi
 	# Get easy-rsa
-	EASYRSAURL='https://github.com/OpenVPN/easy-rsa/releases/download/v3.0.6/EasyRSA-nix-3.0.6.tgz'
+	EASYRSAURL='https://github.com/OpenVPN/easy-rsa/releases/download/v3.0.6/EasyRSA-unix-3.0.6.tgz'
 	wget -O ~/easyrsa.tgz "$EASYRSAURL" 2>/dev/null || curl -Lo ~/easyrsa.tgz "$EASYRSAURL"
 	tar xzf ~/easyrsa.tgz -C ~/
 	mv ~/EasyRSA-3.0.6/ /etc/openvpn/server/
